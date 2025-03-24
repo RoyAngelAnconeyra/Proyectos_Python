@@ -83,8 +83,13 @@ class Pokemon:
         uno de los pokemon son < 0
         Actualizar los datos.
         '''
+        cont = 1
         while (self.barras > 0) and (Pokemon2.barras > 0):
             # Imprimir los puntos_de_Salud de cada Pokemon
+            #turno = False
+            print("*************************************************************")
+            print(f"\n\t\t--------    Round {cont}    --------\t\t\n")
+            cont += 1
             print(f"\n{self.nombre}\t\tPS\t{self.puntos_de_salud}")
             print(f"{Pokemon2.nombre}\t\tPS\t{Pokemon2.puntos_de_salud}\n")
 
@@ -140,6 +145,7 @@ class Pokemon:
             # Comprueba si Pokemon se debilito
             if self.barras <= 0:
                 imprimir_con_retraso("\n..." + self.nombre + ' se debilito.')
+            
 
     def lucha(self, Pokemon2):
         '''
