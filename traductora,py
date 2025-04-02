@@ -1,0 +1,18 @@
+# Jeringonza
+# Agregar p despues de cada voval
+# repetir la vocal
+
+palabra = input("Ingresa una palabra: ")
+translado = ""
+
+for letra in palabra:
+    if letra in "AEIOUaeiou":
+        translado += letra
+        #agregar p depsues de la vocal
+        translado += "p"
+
+    #repetir la vocal
+    translado += letra
+
+print(translado)
+
